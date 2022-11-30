@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calc.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body style="background-color: lightslategray;">
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h1>CALCULATOR</h1>
+                <div class="card text-bg-secondary mb-3 mb-3 mt-5 p-3" style="max-width: 16rem;">
+                    <div class="card-header">
+                        <input type="text" id="result" >
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <button type="button" id="seven" onclick="display('7')" class="btn btn-secondary btn-sm me-3">7</button>
+                            <button type="button" id="eight" onclick="display('8')" class="btn btn-secondary btn-sm me-3">8</button>
+                            <button type="button" id="nine" onclick="display('9')" class="btn btn-secondary btn-sm me-3">9</button>
+                            <button type="button" id="mult" onclick="display('*')" class="btn btn-secondary btn-sm me-3"
+                                style="color: orange;">x</button>
+                            <button type="button" id="four" onclick="display('4')" class="btn btn-secondary btn-sm me-3 mt-3">4</button>
+                            <button type="button" id="five" onclick="display('5')" class="btn btn-secondary btn-sm me-3 mt-3">5</button>
+                            <button type="button" id="six" onclick="display('6')" class="btn btn-secondary btn-sm me-3 mt-3">6</button>
+                            <button type="button" id="minus" onclick="display('-')" class="btn btn-secondary btn-sm me-3 mt-3"
+                                style="color: orange;">-</button>
+                            <button type="button" id="one" onclick="display('1')" class="btn btn-secondary btn-sm me-3 mt-3">1</button>
+                            <button type="button" id="two" onclick="display('2')" class="btn btn-secondary btn-sm me-3 mt-3">2</button>
+                            <button type="button" id="three" onclick="display('3')" class="btn btn-secondary btn-sm me-3 mt-3">3</button>
+                            <button type="button" id="plus" onclick="display('+')" class="btn btn-secondary btn-sm me-3 mt-3"
+                                style="color: orange;">+</button>
+                            <button type="button" id="ac" onclick="allClr()" class="btn btn-secondary btn-sm me-3 mt-3"
+                                style="color: red;">AC</button>
+                            <button type="button" id="zero" onclick="display('0')" class="btn btn-secondary btn-sm me-3 mt-3"
+                                style="color: orange;">0</button>
+                            <button type="button" id="divide" onclick="display('/')" class="btn btn-secondary btn-sm me-3 mt-3"
+                                style="color: orange;">/</button>
+                            <button type="button" id="equal" onclick="equal()" class="btn btn-secondary btn-sm me-2 mt-3"
+                                style="color: orange;">=</button>
+                            <button type="button" id="back" onclick="back()" class="btn btn-secondary btn-sm me-2 mt-3">
+                            <=</button> 
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+</body>
+<script src="./calc.js"></script>
+</html>
